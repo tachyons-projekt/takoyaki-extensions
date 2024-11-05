@@ -1,0 +1,22 @@
+{
+  "name": "Komiku",
+  "version": "0.0.1",
+  "base_url": "https://komiku.id",
+  "selector": {
+    "menus": [
+      {
+        "id": "terbaru",
+        "name": "Rilisan Komik Terbaru",
+        "path": "/",
+        "list_selector": "#Terbaru > div > article",
+        "item_selector": {
+          "title": ".ls4j > h3",
+          "url": "a",
+          "image": "img",
+          "last_chapter": ".ls4j > a",
+          "updated_at": ".ls4j > span"
+        }
+      }
+    ]
+  }
+}
